@@ -37,7 +37,7 @@ namespace TinyCollege
             {
                 conn.Open();
                 //adds studentId to the table(Need to check if the student ID is in use and then add the next value)
-                comd.Parameters.AddWithValue("@studentId",);
+                comd.Parameters.AddWithValue("@studentId",3);
                 //adds name entered in the text box field(need to create validation checks)
                 comd.Parameters.AddWithValue("@studentName", txtStudentName.Text);
                 comd.ExecuteScalar();
