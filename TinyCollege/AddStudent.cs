@@ -32,10 +32,13 @@ namespace TinyCollege
         {
             using (conn = new SqlConnection(connectionString))
             using (SqlCommand comd = new SqlCommand
+                //added Indentity insert to allow the Student ID to be modified
                 ("SET IDENTITY_INSERT student ON INSERT INTO student (studentId, studentName) VALUES (@studentId, @studentName)", conn))
             {
                 conn.Open();
+                //adds studentId to the table(Need to check if the student ID is in use and then add the next value)
                 comd.Parameters.AddWithValue("@studentId",);
+                //adds name entered in the text box field(need to create validation checks)
                 comd.Parameters.AddWithValue("@studentName", txtStudentName.Text);
                 comd.ExecuteScalar();
                 MessageBox.Show("Student Added");
@@ -45,12 +48,7 @@ namespace TinyCollege
 
         private void frmAddStudent_Load(object sender, EventArgs e)
         {
-            using( conn=new SqlConnection(connectionString))
-            using( SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM student", conn))
-            {
-                DataTable studentTable = new DataTable();
-                adapter.Fill(studentTable);
-            }
+       
         }
     }
 }
