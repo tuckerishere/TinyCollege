@@ -62,6 +62,7 @@
             this.btnAddStudent.TabIndex = 2;
             this.btnAddStudent.Text = "&Add Student";
             this.btnAddStudent.UseVisualStyleBackColor = true;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // btnClose
             // 
@@ -92,6 +93,7 @@
             this.Controls.Add(this.lblstuInfo);
             this.Name = "frmAddStudent";
             this.Text = "Add a Student";
+            this.Load += new System.EventHandler(this.frmAddStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

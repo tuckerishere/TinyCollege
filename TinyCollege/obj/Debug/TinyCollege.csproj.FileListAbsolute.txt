@@ -12,3 +12,17 @@ C:\Users\Mike\Desktop\Agile\ProjectOne\TinyCollege\TinyCollege\obj\Debug\TinyCol
 C:\Users\Mike\Desktop\Agile\ProjectOne\TinyCollege\TinyCollege\obj\Debug\TinyCollege.csproj.GenerateResource.cache
 C:\Users\Mike\Desktop\Agile\ProjectOne\TinyCollege\TinyCollege\obj\Debug\TinyCollege.exe
 C:\Users\Mike\Desktop\Agile\ProjectOne\TinyCollege\TinyCollege\obj\Debug\TinyCollege.pdb
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\bin\Debug\TinyCollege.exe.config
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\bin\Debug\TinyCollege.exe
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\bin\Debug\TinyCollege.pdb
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.csprojAssemblyReference.cache
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.frmAddStudent.resources
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.frmAddCourse.resources
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.frmCurrentCourse.resources
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.frmCurrentlyEnrolled.resources
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.frmEnrollCourse.resources
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.frmMain.resources
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.Properties.Resources.resources
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.csproj.GenerateResource.cache
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.exe
+C:\Users\Mike\Desktop\Agile\tinyCollege\TinyCollege\obj\Debug\TinyCollege.pdb
