@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.grpStudentData = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblStudentName = new System.Windows.Forms.Label();
-            this.txtStudentID = new System.Windows.Forms.TextBox();
-            this.btnFind = new System.Windows.Forms.Button();
             this.lblStudentResults = new System.Windows.Forms.Label();
+            this.btnFind = new System.Windows.Forms.Button();
+            this.txtStudentID = new System.Windows.Forms.TextBox();
+            this.lblStudentName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblCoursesByStudent = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.lstCourseList = new System.Windows.Forms.ListBox();
@@ -54,15 +54,31 @@
             this.grpStudentData.TabStop = false;
             this.grpStudentData.Text = "Student Data:";
             // 
-            // label1
+            // lblStudentResults
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 51);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Student ID:";
+            this.lblStudentResults.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblStudentResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentResults.Location = new System.Drawing.Point(341, 160);
+            this.lblStudentResults.Name = "lblStudentResults";
+            this.lblStudentResults.Size = new System.Drawing.Size(643, 51);
+            this.lblStudentResults.TabIndex = 5;
+            // 
+            // btnFind
+            // 
+            this.btnFind.Location = new System.Drawing.Point(807, 46);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(177, 65);
+            this.btnFind.TabIndex = 4;
+            this.btnFind.Text = "Find";
+            this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
+            // txtStudentID
+            // 
+            this.txtStudentID.Location = new System.Drawing.Point(298, 64);
+            this.txtStudentID.Name = "txtStudentID";
+            this.txtStudentID.Size = new System.Drawing.Size(472, 31);
+            this.txtStudentID.TabIndex = 2;
             // 
             // lblStudentName
             // 
@@ -74,30 +90,15 @@
             this.lblStudentName.TabIndex = 1;
             this.lblStudentName.Text = "Student Name:";
             // 
-            // txtStudentID
+            // label1
             // 
-            this.txtStudentID.Location = new System.Drawing.Point(298, 64);
-            this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(472, 31);
-            this.txtStudentID.TabIndex = 2;
-            // 
-            // btnFind
-            // 
-            this.btnFind.Location = new System.Drawing.Point(807, 46);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(177, 65);
-            this.btnFind.TabIndex = 4;
-            this.btnFind.Text = "Find";
-            this.btnFind.UseVisualStyleBackColor = true;
-            // 
-            // lblStudentResults
-            // 
-            this.lblStudentResults.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblStudentResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStudentResults.Location = new System.Drawing.Point(341, 160);
-            this.lblStudentResults.Name = "lblStudentResults";
-            this.lblStudentResults.Size = new System.Drawing.Size(643, 51);
-            this.lblStudentResults.TabIndex = 5;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(237, 51);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Student ID:";
             // 
             // lblCoursesByStudent
             // 

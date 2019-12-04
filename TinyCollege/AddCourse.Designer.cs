@@ -32,9 +32,9 @@
             this.lblSemesterOffered = new System.Windows.Forms.Label();
             this.lblCourseTitle = new System.Windows.Forms.Label();
             this.txtCourseTitle = new System.Windows.Forms.TextBox();
-            this.txtSemesterOffered = new System.Windows.Forms.TextBox();
             this.btnAddCourse = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.cmbSemester = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblCourseData
@@ -71,13 +71,6 @@
             this.txtCourseTitle.Size = new System.Drawing.Size(409, 31);
             this.txtCourseTitle.TabIndex = 3;
             // 
-            // txtSemesterOffered
-            // 
-            this.txtSemesterOffered.Location = new System.Drawing.Point(278, 265);
-            this.txtSemesterOffered.Name = "txtSemesterOffered";
-            this.txtSemesterOffered.Size = new System.Drawing.Size(409, 31);
-            this.txtSemesterOffered.TabIndex = 4;
-            // 
             // btnAddCourse
             // 
             this.btnAddCourse.Location = new System.Drawing.Point(39, 381);
@@ -86,6 +79,7 @@
             this.btnAddCourse.TabIndex = 5;
             this.btnAddCourse.Text = "&Add Course";
             this.btnAddCourse.UseVisualStyleBackColor = true;
+            this.btnAddCourse.Click += new System.EventHandler(this.btnAddCourse_Click);
             // 
             // btnClose
             // 
@@ -97,14 +91,27 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // cmbSemester
+            // 
+            this.cmbSemester.FormattingEnabled = true;
+            this.cmbSemester.Items.AddRange(new object[] {
+            "Spring",
+            "Summer",
+            "Fall",
+            "Winter"});
+            this.cmbSemester.Location = new System.Drawing.Point(278, 263);
+            this.cmbSemester.Name = "cmbSemester";
+            this.cmbSemester.Size = new System.Drawing.Size(409, 33);
+            this.cmbSemester.TabIndex = 7;
+            // 
             // frmAddCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 513);
+            this.Controls.Add(this.cmbSemester);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAddCourse);
-            this.Controls.Add(this.txtSemesterOffered);
             this.Controls.Add(this.txtCourseTitle);
             this.Controls.Add(this.lblCourseTitle);
             this.Controls.Add(this.lblSemesterOffered);
@@ -122,8 +129,8 @@
         private System.Windows.Forms.Label lblSemesterOffered;
         private System.Windows.Forms.Label lblCourseTitle;
         private System.Windows.Forms.TextBox txtCourseTitle;
-        private System.Windows.Forms.TextBox txtSemesterOffered;
         private System.Windows.Forms.Button btnAddCourse;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.ComboBox cmbSemester;
     }
 }

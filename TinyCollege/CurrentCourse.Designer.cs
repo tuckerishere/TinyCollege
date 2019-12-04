@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.grpCourseData = new System.Windows.Forms.GroupBox();
+            this.btnFind = new System.Windows.Forms.Button();
+            this.txtCourseTitle = new System.Windows.Forms.TextBox();
+            this.txtCourseID = new System.Windows.Forms.TextBox();
+            this.lblCourseTitle = new System.Windows.Forms.Label();
+            this.lblCourseID = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.lstCourseData = new System.Windows.Forms.ListBox();
             this.lblCurrentEnrollment = new System.Windows.Forms.Label();
-            this.lblCourseID = new System.Windows.Forms.Label();
-            this.lblCourseTitle = new System.Windows.Forms.Label();
-            this.txtCourseID = new System.Windows.Forms.TextBox();
-            this.txtCourseTitle = new System.Windows.Forms.TextBox();
-            this.btnFind = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.grpCourseData.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,53 @@
             this.grpCourseData.TabIndex = 0;
             this.grpCourseData.TabStop = false;
             this.grpCourseData.Text = "Course Data";
+            // 
+            // btnFind
+            // 
+            this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFind.Location = new System.Drawing.Point(758, 49);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(144, 68);
+            this.btnFind.TabIndex = 3;
+            this.btnFind.Text = "Find";
+            this.btnFind.UseVisualStyleBackColor = true;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
+            // 
+            // txtCourseTitle
+            // 
+            this.txtCourseTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCourseTitle.Location = new System.Drawing.Point(299, 173);
+            this.txtCourseTitle.Name = "txtCourseTitle";
+            this.txtCourseTitle.ReadOnly = true;
+            this.txtCourseTitle.Size = new System.Drawing.Size(520, 31);
+            this.txtCourseTitle.TabIndex = 6;
+            // 
+            // txtCourseID
+            // 
+            this.txtCourseID.Location = new System.Drawing.Point(278, 67);
+            this.txtCourseID.Name = "txtCourseID";
+            this.txtCourseID.Size = new System.Drawing.Size(445, 31);
+            this.txtCourseID.TabIndex = 5;
+            // 
+            // lblCourseTitle
+            // 
+            this.lblCourseTitle.AutoSize = true;
+            this.lblCourseTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCourseTitle.Location = new System.Drawing.Point(27, 155);
+            this.lblCourseTitle.Name = "lblCourseTitle";
+            this.lblCourseTitle.Size = new System.Drawing.Size(266, 51);
+            this.lblCourseTitle.TabIndex = 4;
+            this.lblCourseTitle.Text = "Course Title:";
+            // 
+            // lblCourseID
+            // 
+            this.lblCourseID.AutoSize = true;
+            this.lblCourseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCourseID.Location = new System.Drawing.Point(27, 49);
+            this.lblCourseID.Name = "lblCourseID";
+            this.lblCourseID.Size = new System.Drawing.Size(227, 51);
+            this.lblCourseID.TabIndex = 3;
+            this.lblCourseID.Text = "Course ID:";
             // 
             // lstCourseData
             // 
@@ -73,50 +120,6 @@
             this.lblCurrentEnrollment.Size = new System.Drawing.Size(723, 51);
             this.lblCurrentEnrollment.TabIndex = 2;
             this.lblCurrentEnrollment.Text = "All Students Enrolled in This Course:";
-            // 
-            // lblCourseID
-            // 
-            this.lblCourseID.AutoSize = true;
-            this.lblCourseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCourseID.Location = new System.Drawing.Point(27, 49);
-            this.lblCourseID.Name = "lblCourseID";
-            this.lblCourseID.Size = new System.Drawing.Size(227, 51);
-            this.lblCourseID.TabIndex = 3;
-            this.lblCourseID.Text = "Course ID:";
-            // 
-            // lblCourseTitle
-            // 
-            this.lblCourseTitle.AutoSize = true;
-            this.lblCourseTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCourseTitle.Location = new System.Drawing.Point(27, 155);
-            this.lblCourseTitle.Name = "lblCourseTitle";
-            this.lblCourseTitle.Size = new System.Drawing.Size(266, 51);
-            this.lblCourseTitle.TabIndex = 4;
-            this.lblCourseTitle.Text = "Course Title:";
-            // 
-            // txtCourseID
-            // 
-            this.txtCourseID.Location = new System.Drawing.Point(278, 67);
-            this.txtCourseID.Name = "txtCourseID";
-            this.txtCourseID.Size = new System.Drawing.Size(445, 31);
-            this.txtCourseID.TabIndex = 5;
-            // 
-            // txtCourseTitle
-            // 
-            this.txtCourseTitle.Location = new System.Drawing.Point(299, 173);
-            this.txtCourseTitle.Name = "txtCourseTitle";
-            this.txtCourseTitle.Size = new System.Drawing.Size(520, 31);
-            this.txtCourseTitle.TabIndex = 6;
-            // 
-            // btnFind
-            // 
-            this.btnFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFind.Location = new System.Drawing.Point(758, 49);
-            this.btnFind.Name = "btnFind";
-            this.btnFind.Size = new System.Drawing.Size(144, 68);
-            this.btnFind.TabIndex = 3;
-            this.btnFind.Text = "Find";
-            this.btnFind.UseVisualStyleBackColor = true;
             // 
             // btnClose
             // 
