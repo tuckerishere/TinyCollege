@@ -1,0 +1,10 @@
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\bin\Debug\Chapter6Example1.exe.config
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\bin\Debug\Chapter6Example1.exe
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\bin\Debug\Chapter6Example1.pdb
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\obj\Debug\Chapter6Example1.csproj.AssemblyReference.cache
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\obj\Debug\Chapter6Example1.Form1.resources
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\obj\Debug\Chapter6Example1.Properties.Resources.resources
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\obj\Debug\Chapter6Example1.csproj.GenerateResource.cache
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\obj\Debug\Chapter6Example1.csproj.CoreCompileInputs.cache
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\obj\Debug\Chapter6Example1.exe
+C:\Users\jgilb\Documents\CSharp\HomeWork\Chapter6Example1\Chapter6Example1\obj\Debug\Chapter6Example1.pdb
